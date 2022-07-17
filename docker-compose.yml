@@ -1,0 +1,17 @@
+version: "3.8"
+
+services:
+  app:
+    build:
+      context: .
+      args:
+        NODE_ENV: development
+    image: docker.pkg.github.com/ajithpmohan/react-weather-app/app:1.0.0
+    container_name: app
+    volumes:
+      - .:/app
+      - /app/node_modules
+    ports:
+      - 5000:5000
+    environment:
+      -  WATCHPACK_POLLING=true
