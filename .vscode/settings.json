@@ -8,5 +8,5 @@
   "[json]": {
     "editor.defaultFormatter": "vscode.json-language-features"
   },
-  "workbench.colorTheme": "Monokai"
+  "workbench.colorTheme": "Solarized Dark"
 }
