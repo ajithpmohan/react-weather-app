@@ -11,7 +11,9 @@ import {
 const Forecast = ({ data }) => {
   return (
     <>
-      <label className="title">Daily</label>
+      <div className="title-box">
+        <label className="title">Forecast</label>
+      </div>
       <Accordion allowZeroExpanded>
         {data.list.map((item, idx) => {
           const forecastDate = new Date(item.dt_txt);
