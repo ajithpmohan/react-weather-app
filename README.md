@@ -1,7 +1,10 @@
 # React.js Weather App
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/4e791dc5-54ad-4c08-96dd-b93341bed5a9/deploy-status)](https://app.netlify.com/sites/weather-forecast-reactapp/deploys)
+
 ## Tech Stack
 
+- Docker
 - React.js
 - Prettier
 - OpenWeatherMap API
