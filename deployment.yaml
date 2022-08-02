@@ -1,0 +1,23 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: k8s-react-weather-app
+spec:
+  replicas: 4
+  selector:
+    matchLabels:
+      app: k8s-react-weather-app
+  template:
+    metadata:
+      labels:
+        app: k8s-react-weather-app
+    spec:
+      containers:
+      - name: k8s-react-weather-app
+        image: ajithpmohan90/k8s-react-weather-app:1.0.0
+        resources:
+          limits:
+            memory: "512Mi"
+            cpu: "500m"
+        ports:
+        - containerPort: 5000
